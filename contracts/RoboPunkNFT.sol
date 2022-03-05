@@ -51,6 +51,7 @@ contract RoboPunksNFT is ERC721, Ownable {
 
         for(uint256 i = 0; i < _quantity; i++ ){
             uint256 newTokenId = totalSupply + 1;
+            totalSupply++;
             _safeMint(msg.sender, newTokenId);
         }
     }
